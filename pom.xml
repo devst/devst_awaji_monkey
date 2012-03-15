@@ -16,8 +16,8 @@
 
   <repositories>
     <repository>
-      <id>marble-repository</id>
-      <name>sample s3 repository</name>
+      <id>devst-awaji-repository</id>
+      <name>devst_awaji s3 repository</name>
       <url>http://devst-awaji-repository.s3-website-ap-northeast-1.amazonaws.com/release</url>
     </repository>
   </repositories>
