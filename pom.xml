@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>answers</groupId>
+  <groupId>devst</groupId>
   <artifactId>devst_awaji_src</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
@@ -14,6 +14,14 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+  <repositories>
+    <repository>
+      <id>marble-repository</id>
+      <name>sample s3 repository</name>
+      <url>http://devst-awaji-repository.s3-website-ap-northeast-1.amazonaws.com/release</url>
+    </repository>
+  </repositories>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -22,8 +30,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>answers</groupId>
-      <artifactId>devst_awaji_answers</artifactId>
+      <groupId>devst</groupId>
+      <artifactId>devst_awaji_judgeman</artifactId>
       <version>1.0-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
