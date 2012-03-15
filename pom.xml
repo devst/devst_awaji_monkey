@@ -18,7 +18,7 @@
     <repository>
       <id>devst-awaji-repository</id>
       <name>devst_awaji s3 repository</name>
-      <url>http://devst-awaji-repository.s3-website-ap-northeast-1.amazonaws.com/release</url>
+      <url>http://devst-awaji-repository.s3.amazonaws.com/release</url>
     </repository>
   </repositories>
 
