@@ -28,6 +28,27 @@
     </plugins>
   </build>
 
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <configuration>
+          <author>true</author>
+          <source>1.6</source>
+          <showPackage>false</showPackage>
+          <showPrivate>true</showPrivate>
+          <encoding>UTF-8</encoding>
+          <charset>UTF-8</charset>
+          <docencoding>UTF-8</docencoding>
+          <links> 
+            <link>http://java.sun.com/j2se/1.6.0/ja/docs/ja/api/</link> 
+          </links>
+        </configuration>
+      </plugin>
+    </plugins>
+  </reporting>
+
   <repositories>
     <repository>
       <id>devst-awaji-repository</id>
