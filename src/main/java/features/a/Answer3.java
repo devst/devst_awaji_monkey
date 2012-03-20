@@ -1,7 +1,7 @@
-package answers.a;
+package features.a;
 
 
-public class Answer3 implements answers.Answer3 {
+public class Answer3 implements features.Answer3 {
 
 	@Override
 	public String fizzBuzz(int i) {

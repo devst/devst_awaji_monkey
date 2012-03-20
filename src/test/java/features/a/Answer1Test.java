@@ -1,4 +1,4 @@
-package answers.a;
+package features.a;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -6,7 +6,7 @@ import static org.junit.Assert.assertThat;
 import org.junit.Before;
 import org.junit.Test;
 
-import answers.Answer1;
+import features.Answer1;
 
 public class Answer1Test {
 
@@ -14,7 +14,7 @@ public class Answer1Test {
 
 	@Before
 	public void setUp() {
-		sut = new answers.a.Answer1();
+		sut = new features.a.Answer1();
 	}
 
 	@Test
