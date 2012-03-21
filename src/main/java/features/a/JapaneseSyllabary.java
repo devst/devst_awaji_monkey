@@ -1,7 +1,7 @@
 package features.a;
 
 
-public class Answer2 implements features.Answer2 {
+public class JapaneseSyllabary implements features.JapaneseSyllabary {
 
 	@Override
 	public String execute(char... str) {
