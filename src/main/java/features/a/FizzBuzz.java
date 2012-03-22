@@ -1,7 +1,7 @@
 package features.a;
 
 
-public class Answer3 implements features.Answer3 {
+public class FizzBuzz implements features.FizzBuzz {
 
 	@Override
 	public String fizzBuzz(int i) {

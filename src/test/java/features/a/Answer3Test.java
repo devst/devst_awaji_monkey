@@ -6,15 +6,15 @@ import static org.junit.Assert.assertThat;
 import org.junit.Before;
 import org.junit.Test;
 
-import features.Answer3;
+import features.FizzBuzz;
 
 public class Answer3Test {
 
-	private Answer3 sut;
+	private FizzBuzz sut;
 
 	@Before
 	public void setUp() {
-		sut = new features.a.Answer3();
+		sut = new features.a.FizzBuzz();
 	}
 
 	@Test

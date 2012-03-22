@@ -1,6 +1,6 @@
 package features.a;
 
-public class Answer6 implements features.Answer6 {
+public class Coin implements features.Coin {
 
 	private final int[] COINS = { 500, 100, 50, 10, 5, 1 };
 

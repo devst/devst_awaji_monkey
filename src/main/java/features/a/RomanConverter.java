@@ -1,9 +1,9 @@
 package features.a;
 
-public class Answer5 implements features.Answer5 {
+public class RomanConverter implements features.RomanConverter{
 
 	@Override
-	public int toInt(String roman) {
+	public int toArabic(String roman) {
 		if (roman == null) {
 			throw new RuntimeException();
 		}

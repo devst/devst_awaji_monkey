@@ -4,18 +4,16 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.fail;
 
-import features.Answer5;
-
 import org.junit.Before;
 import org.junit.Test;
 
 public class Answer5Test {
 
-	private Answer5 sut;
+	private RomanConverter sut;
 
 	@Before
 	public void setUp() {
-		sut = new features.a.Answer5();
+		sut = new features.a.RomanConverter();
 	}
 
 	/**
@@ -39,9 +37,9 @@ public class Answer5Test {
 	 */
 	@Test
 	public void testForThousands() {
-		assertThat(sut.toInt("MMM"), is(3000));
-		assertThat(sut.toInt("MM"), is(2000));
-		assertThat(sut.toInt("M"), is(1000));
+		assertThat(sut.toArabic("MMM"), is(3000));
+		assertThat(sut.toArabic("MM"), is(2000));
+		assertThat(sut.toArabic("M"), is(1000));
 	}
 
 	/**
@@ -49,15 +47,15 @@ public class Answer5Test {
 	 */
 	@Test
 	public void testForHundreds() {
-		assertThat(sut.toInt("MMMCM"), is(3900));
-		assertThat(sut.toInt("MMMDCCC"), is(3800));
-		assertThat(sut.toInt("MMMDCC"), is(3700));
-		assertThat(sut.toInt("MMMDC"), is(3600));
-		assertThat(sut.toInt("MMMD"), is(3500));
-		assertThat(sut.toInt("MMMCD"), is(3400));
-		assertThat(sut.toInt("MMMCCC"), is(3300));
-		assertThat(sut.toInt("MMMCC"), is(3200));
-		assertThat(sut.toInt("MMMC"), is(3100));
+		assertThat(sut.toArabic("MMMCM"), is(3900));
+		assertThat(sut.toArabic("MMMDCCC"), is(3800));
+		assertThat(sut.toArabic("MMMDCC"), is(3700));
+		assertThat(sut.toArabic("MMMDC"), is(3600));
+		assertThat(sut.toArabic("MMMD"), is(3500));
+		assertThat(sut.toArabic("MMMCD"), is(3400));
+		assertThat(sut.toArabic("MMMCCC"), is(3300));
+		assertThat(sut.toArabic("MMMCC"), is(3200));
+		assertThat(sut.toArabic("MMMC"), is(3100));
 	}
 
 	/**
@@ -65,15 +63,15 @@ public class Answer5Test {
 	 */
 	@Test
 	public void testForTens() {
-		assertThat(sut.toInt("MMMCMXC"), is(3990));
-		assertThat(sut.toInt("MMMCMLXXX"), is(3980));
-		assertThat(sut.toInt("MMMCMLXX"), is(3970));
-		assertThat(sut.toInt("MMMCMLX"), is(3960));
-		assertThat(sut.toInt("MMMCML"), is(3950));
-		assertThat(sut.toInt("MMMCMXL"), is(3940));
-		assertThat(sut.toInt("MMMCMXXX"), is(3930));
-		assertThat(sut.toInt("MMMCMXX"), is(3920));
-		assertThat(sut.toInt("MMMCMX"), is(3910));
+		assertThat(sut.toArabic("MMMCMXC"), is(3990));
+		assertThat(sut.toArabic("MMMCMLXXX"), is(3980));
+		assertThat(sut.toArabic("MMMCMLXX"), is(3970));
+		assertThat(sut.toArabic("MMMCMLX"), is(3960));
+		assertThat(sut.toArabic("MMMCML"), is(3950));
+		assertThat(sut.toArabic("MMMCMXL"), is(3940));
+		assertThat(sut.toArabic("MMMCMXXX"), is(3930));
+		assertThat(sut.toArabic("MMMCMXX"), is(3920));
+		assertThat(sut.toArabic("MMMCMX"), is(3910));
 	}
 
 	/**
@@ -81,15 +79,15 @@ public class Answer5Test {
 	 */
 	@Test
 	public void testForOnes() {
-		assertThat(sut.toInt("MMMCMXCIX"), is(3999));
-		assertThat(sut.toInt("MMMCMXCVIII"), is(3998));
-		assertThat(sut.toInt("MMMCMXCVII"), is(3997));
-		assertThat(sut.toInt("MMMCMXCVI"), is(3996));
-		assertThat(sut.toInt("MMMCMXCV"), is(3995));
-		assertThat(sut.toInt("MMMCMXCIV"), is(3994));
-		assertThat(sut.toInt("MMMCMXCIII"), is(3993));
-		assertThat(sut.toInt("MMMCMXCII"), is(3992));
-		assertThat(sut.toInt("MMMCMXCI"), is(3991));
+		assertThat(sut.toArabic("MMMCMXCIX"), is(3999));
+		assertThat(sut.toArabic("MMMCMXCVIII"), is(3998));
+		assertThat(sut.toArabic("MMMCMXCVII"), is(3997));
+		assertThat(sut.toArabic("MMMCMXCVI"), is(3996));
+		assertThat(sut.toArabic("MMMCMXCV"), is(3995));
+		assertThat(sut.toArabic("MMMCMXCIV"), is(3994));
+		assertThat(sut.toArabic("MMMCMXCIII"), is(3993));
+		assertThat(sut.toArabic("MMMCMXCII"), is(3992));
+		assertThat(sut.toArabic("MMMCMXCI"), is(3991));
 	}
 
 	/**
@@ -97,17 +95,17 @@ public class Answer5Test {
 	 */
 	@Test
 	public void testForSomeCases() {
-		assertThat(sut.toInt("XI"), is(11));
-		assertThat(sut.toInt("XII"), is(12));
-		assertThat(sut.toInt("XIV"), is(14));
-		assertThat(sut.toInt("XVIII"), is(18));
-		assertThat(sut.toInt("XXIV"), is(24));
-		assertThat(sut.toInt("XLIII"), is(43));
-		assertThat(sut.toInt("XCIX"), is(99));
-		assertThat(sut.toInt("CDXCV"), is(495));
-		assertThat(sut.toInt("MDCCCLXXXVIII"), is(1888));
-		assertThat(sut.toInt("MCMXLV"), is(1945));
-		assertThat(sut.toInt("MMMCMXCIX"), is(3999));
+		assertThat(sut.toArabic("XI"), is(11));
+		assertThat(sut.toArabic("XII"), is(12));
+		assertThat(sut.toArabic("XIV"), is(14));
+		assertThat(sut.toArabic("XVIII"), is(18));
+		assertThat(sut.toArabic("XXIV"), is(24));
+		assertThat(sut.toArabic("XLIII"), is(43));
+		assertThat(sut.toArabic("XCIX"), is(99));
+		assertThat(sut.toArabic("CDXCV"), is(495));
+		assertThat(sut.toArabic("MDCCCLXXXVIII"), is(1888));
+		assertThat(sut.toArabic("MCMXLV"), is(1945));
+		assertThat(sut.toArabic("MMMCMXCIX"), is(3999));
 	}
 
 	/**
@@ -134,13 +132,13 @@ public class Answer5Test {
 	}
 
 	/**
-	 * argにtoIntメソッドを適用し、RuntimeExceptionが投げられることを確認する。
+	 * argにtoArabicメソッドを適用し、RuntimeExceptionが投げられることを確認する。
 	 * 
-	 * @param arg toIntメソッドを適用する引数。
+	 * @param arg toArabicメソッドを適用する引数。
 	 */
 	private void assertRuntimeExceptionThrown(String arg) {
 		try {
-			this.sut.toInt(arg);
+			this.sut.toArabic(arg);
 			fail("例外が投げられなかった。");
 		} catch (Exception e) {
 			if (!RuntimeException.class.equals(e.getClass())) {

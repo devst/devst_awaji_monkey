@@ -2,7 +2,7 @@ package features.a;
 
 import java.util.Arrays;
 
-public class Answer4 implements features.Answer4 {
+public class Poker implements features.Poker {
 
 	enum Suit {
 		Spade, Heart, Diamond, Club

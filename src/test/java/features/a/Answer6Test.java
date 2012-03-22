@@ -6,18 +6,16 @@ import static org.junit.Assert.fail;
 
 import java.lang.reflect.Method;
 
-import features.Answer6;
-
 import org.junit.Before;
 import org.junit.Test;
 
 public class Answer6Test {
 
-	private Answer6 sut;
+	private Coin sut;
 
 	@Before
 	public void setUp() {
-		sut = new features.a.Answer6();
+		sut = new features.a.Coin();
 	}
 
 	/**

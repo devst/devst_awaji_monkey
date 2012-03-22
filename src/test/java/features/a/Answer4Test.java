@@ -4,18 +4,18 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.fail;
 
-import features.Answer4;
+import features.Poker;
 
 import org.junit.Before;
 import org.junit.Test;
 
 public class Answer4Test {
 
-	private Answer4 sut;
+	private Poker sut;
 
 	@Before
 	public void setUp() {
-		sut = new features.a.Answer4();
+		sut = new features.a.Poker();
 	}
 
 	/**
