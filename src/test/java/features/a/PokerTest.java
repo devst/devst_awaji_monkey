@@ -9,7 +9,7 @@ import features.Poker;
 import org.junit.Before;
 import org.junit.Test;
 
-public class Answer4Test {
+public class PokerTest {
 
 	private Poker sut;
 

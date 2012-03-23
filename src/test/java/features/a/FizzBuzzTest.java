@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import features.FizzBuzz;
 
-public class Answer3Test {
+public class FizzBuzzTest {
 
 	private FizzBuzz sut;
 

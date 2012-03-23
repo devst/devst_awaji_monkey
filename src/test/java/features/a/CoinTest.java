@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
 import org.junit.Before;
 import org.junit.Test;
 
-public class Answer6Test {
+public class CoinTest {
 
 	private Coin sut;
 
