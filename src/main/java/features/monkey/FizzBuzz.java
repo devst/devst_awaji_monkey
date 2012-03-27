@@ -1,4 +1,4 @@
-package features.a;
+package features.monkey;
 
 
 public class FizzBuzz implements features.FizzBuzz {

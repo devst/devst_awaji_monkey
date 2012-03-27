@@ -67,7 +67,7 @@
     <dependency>
       <groupId>devst</groupId>
       <artifactId>devst_awaji_judgeman</artifactId>
-      <version>1.2.4</version>
+      <version>1.2.6</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>

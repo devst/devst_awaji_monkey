@@ -1,4 +1,4 @@
-package features.a;
+package features.monkey;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -14,7 +14,7 @@ public class FizzBuzzTest {
 
 	@Before
 	public void setUp() {
-		sut = new features.a.FizzBuzz();
+		sut = new features.monkey.FizzBuzz();
 	}
 
 	@Test

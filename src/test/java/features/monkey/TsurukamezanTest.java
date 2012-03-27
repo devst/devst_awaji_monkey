@@ -1,4 +1,4 @@
-package features.a;
+package features.monkey;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -15,7 +15,7 @@ public class TsurukamezanTest {
 
 	@Before
 	public void setUp() {
-		sut = new features.a.Tsurukamezan();
+		sut = new features.monkey.Tsurukamezan();
 	}
 
 

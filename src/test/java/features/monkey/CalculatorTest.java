@@ -1,10 +1,12 @@
-package features.a;
+package features.monkey;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import features.monkey.Calculator;
 
 public class CalculatorTest {
 	

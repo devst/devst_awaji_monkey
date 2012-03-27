@@ -1,4 +1,4 @@
-package features.a;
+package features.monkey;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -9,13 +9,15 @@ import java.lang.reflect.Method;
 import org.junit.Before;
 import org.junit.Test;
 
+import features.monkey.Coin;
+
 public class CoinTest {
 
 	private Coin sut;
 
 	@Before
 	public void setUp() {
-		sut = new features.a.Coin();
+		sut = new features.monkey.Coin();
 	}
 
 	/**

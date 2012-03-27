@@ -1,4 +1,4 @@
-package features.a;
+package features.monkey;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;

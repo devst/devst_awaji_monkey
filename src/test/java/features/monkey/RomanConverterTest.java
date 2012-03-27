@@ -1,4 +1,4 @@
-package features.a;
+package features.monkey;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -7,13 +7,15 @@ import static org.junit.Assert.fail;
 import org.junit.Before;
 import org.junit.Test;
 
+import features.monkey.RomanConverter;
+
 public class RomanConverterTest {
 
 	private RomanConverter sut;
 
 	@Before
 	public void setUp() {
-		sut = new features.a.RomanConverter();
+		sut = new features.monkey.RomanConverter();
 	}
 
 	/**
