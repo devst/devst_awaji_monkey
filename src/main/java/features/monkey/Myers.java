@@ -8,7 +8,7 @@ public class Myers implements features.Myers {
 			throw new RuntimeException();
 		}
 
-		if (i + j == k || j + k == i || i + k == j) {
+		if (i + j <= k || j + k <= i || i + k <= j) {
 			throw new RuntimeException();
 		}
 

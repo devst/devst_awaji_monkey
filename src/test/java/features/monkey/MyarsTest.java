@@ -28,6 +28,11 @@ public class MyarsTest {
 		new Myers().getName(1, 1, 2);
 	}
 
+	@Test(expected = RuntimeException.class)
+	public void 三角形にならない_4() throws Exception {
+		new Myers().getName(1, 1, 10);
+	}
+
 	@Test
 	public void 二等辺三角形_1() throws Exception {
 		String actual = new Myers().getName(5, 5, 3);
