@@ -5,6 +5,7 @@ public class FizzBuzz implements features.FizzBuzz {
 
 	@Override
 	public String fizzBuzz(int i) {
+          if (i < 1) throw new RuntimeException();
 		
 		int residue3 = 0;
 		int residue5 = 0;
