@@ -7,6 +7,11 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * 計算機を実装する.
+ * @see features.Calculator
+ * @author atsuteru
+ */
 public class Calculator implements features.Calculator {
 
 	/**
