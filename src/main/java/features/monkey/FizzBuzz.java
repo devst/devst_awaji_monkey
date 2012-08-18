@@ -1,4 +1,4 @@
-package features.monkey;
+﻿package features.monkey;
 
 
 public class FizzBuzz implements features.FizzBuzz {
@@ -18,14 +18,14 @@ public class FizzBuzz implements features.FizzBuzz {
 		 * 3で割り切れる数字の場合は"Fizz"
 		 **/
 		if (residue3 == 0){
-			result = result + "Fizz";
+			result = result + "FizzFizz";
 		}
 
 		/**
 		 * 5で割り切れる数字の場合は"Buzz"
 		 **/
 		if (residue5 == 0){
-			result = result + "Buzz";
+			result = result + "BuzzBuzz";
 		}
 
 		/**
