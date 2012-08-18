@@ -18,14 +18,14 @@ public class FizzBuzz implements features.FizzBuzz {
 		 * 3で割り切れる数字の場合は"Fizz"
 		 **/
 		if (residue3 == 0){
-			result = result + "FizzFizz";
+			result = result + "Fizz";
 		}
 
 		/**
 		 * 5で割り切れる数字の場合は"Buzz"
 		 **/
 		if (residue5 == 0){
-			result = result + "BuzzBuzz";
+			result = result + "Buzz";
 		}
 
 		/**
