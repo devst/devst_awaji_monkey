@@ -5,7 +5,7 @@ public class FirstPairWork implements features.FirstPairWork {
 	@Override
 	public String getIkigomi() {
 		// TODO Auto-generated method stub
-		return null;
+		return "getIkigomi";
 	}
 
 	@Override
